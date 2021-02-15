@@ -163,7 +163,7 @@ animate(main_animation,
   end_pause=30)
 ```
 
-![Animation](\assets\img\post\Plots of england transportation\UK transportation animationv2.gif)<!-- -->
+![Animation](\images\uk\UK_transportation_animationv2.gif)<!-- -->
 
 
 <head><script data-ad-client="ca-pub-5313811741920772" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
