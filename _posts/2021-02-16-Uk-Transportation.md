@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UNited Kingdom's Transportation During Covid-19
+title: United Kingdom's Transportation During Covid-19
 categories: R
 comments: false
 ---
