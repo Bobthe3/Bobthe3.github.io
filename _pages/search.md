@@ -19,3 +19,18 @@ permalink: /search/
     json: '{{ site.baseurl }}/search.json'
     });
 </script>
+
+
+<div class = "centermake">
+  <div class = "frame">
+      <div class="square" id="s0"></div>
+      <div class="square" id="s1"></div>
+      <div class="square" id="s2"></div>
+      <div class="square" id="s3"></div>
+      <div class="square" id="s4"></div>
+      <div class="square" id="s5"></div>
+      <div class="square" id="s6"></div>
+      <div class="square" id="s7"></div>
+      <div class="square" id="s8"></div>
+  </div>
+</div>
