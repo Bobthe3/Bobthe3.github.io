@@ -19,3 +19,7 @@ About Me:
 <p>
 Email me for an inquiries at  "enter redicret email here"
  </p>
+
+
+
+Site made with Jekyll and Github Pages
