@@ -19,8 +19,6 @@ permalink: /search/
     json: '{{ site.baseurl }}/search.json'
     });
 </script>
-
-
 <div class = "centermake">
   <div class = "frame">
       <div class="square" id="s0"></div>

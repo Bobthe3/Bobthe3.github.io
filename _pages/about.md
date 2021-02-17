@@ -6,20 +6,25 @@ permalink: /about/
 This blog is my exploration into Programming and Technology as a whole, including charts and cool links I find.
 
 
+
 ---
 
-<p style="text-align:center;">
+<div style="text-align:center;">
 About Me:
 <p>
 - College student
 <p>
-- Learning R Programming
+- Learning R
 <p>
 - Knows a bit of Python
 <p>
-Email me for an inquiries at  "enter redicret email here"
- </p>
+- Will work for experience
+<p>
+<br>
+Email me for an inquiries at beermoneydaq@gmail.com
 
 
+<br>
+<br>
 
 Site made with Jekyll and Github Pages
