@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: bobthe3blog
+name: Bobthe3's Blog
 
 # Name of the author
 author: Bobthe3
 
 # Short bio or description (displayed in the header)
-description: Technology blog
+description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
@@ -21,10 +21,10 @@ avatar:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 
+  email:
   facebook:
   flickr:
-  github:
+  github: Bobthe3
   instagram:
   linkedin:
   pinterest:

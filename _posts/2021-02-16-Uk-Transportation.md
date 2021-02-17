@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Uk transportation
-categories:
+title: UNited Kingdom's Transportation During Covid-19
+categories: R
+comments: false
 ---
-
-
-
 
 In this project I look at the United Kingdom's Department for Transport data. The UK government started producing this data at the start of the Covid-19 National Lockdown.
 
@@ -14,10 +12,7 @@ In this project I look at the United Kingdom's Department for Transport data. Th
 <p style="text-align:center;"><a href="https://www.gov.uk/government/statistics/transport-use-during-the-coronavirus-covid-19-pandemic">Link To Documentation Page</a></p>
 
 
-https://www.gov.uk/government/statistics/transport-use-during-the-coronavirus-covid-19-pandemic
-
-
-
+--
 
 
 Data includes:
@@ -26,12 +21,15 @@ Data includes:
 3. Transport for London (TfL) tube and bus routes
 4. Bus travel in Great Britain (excluding London)
 5. Cycling in England
-
+<br>
 
 ---
 
 
+
+
 - Installing the packages and creating the data frame
+
 
 ``` r
 library(tidyverse)
@@ -45,6 +43,9 @@ library(readr)
 
 df<- read_csv("~/COVID-19-transport-use-statistics v1.csv")
 ```
+
+
+---
 - Cleaning up the data by making the percentages into numeric values, using the "parse_number" function
 
 ``` r
@@ -55,6 +56,9 @@ df$national_rail<-parse_number(df$`National Rail3,4`)
 df$tube<-parse_number(df$`Transport for London Tube5`)
 df$bikes<-parse_number(df$`Cycling10,11`)
 ```
+
+
+---
  - Formating the date column into the date class
 
 
@@ -62,9 +66,12 @@ df$bikes<-parse_number(df$`Cycling10,11`)
 df$col1<-as.Date(df$col1,"%d/%m/%Y")
 ```
 
+
+
+
+
+---
 - Creating the plot using the ggplot package
-
-
 
 ``` r
 
@@ -82,16 +89,14 @@ all_plots
 ```
 
 
-![GGplot](\bobthe3_blog\resources\_gen\images\Uk transportation Rplot.png)<!-- -->
 
 
 
 
-![GGplot](\bobthe3_blog\static\img\Uk_transportation_Rplot.png)
+![GGplot](\images\uk\static_uk_transport_all_types_rplot.png)
 
 
 
-![GGplot](/bobthe3_blog/static/img/Uk_transportation_Rplot.png)
 
 
 
@@ -103,6 +108,8 @@ all_plots
 
 
 
+
+
 ``` r
 inter_all_plots<- ggplotly(all_plots,tooltip = F) %>% config(displayModeBar=F)
 
@@ -110,17 +117,12 @@ saveWidget(inter_all_plots,"all_transportation_plots.html")
 
 
 ```
-
-
-
-
-<iframe src="\assets\img\post\Plots of england transportation\all_transportation_plots.html" height="800px" width="100%" ></iframe>
-
-
-
-
+<iframe src="\images\uk\all_transportation_plots.html" height="800px" width="900" ></iframe>
 
 ---
+
+
+
 
 - Creating a basic animation of the % of cars
 
@@ -139,7 +141,8 @@ df<-df %>%
 
 main_plot<-df %>%
   ggplot(aes(x=as.Date(col1)))+
-  labs(title ="% of Motor Vehicles on UK Roads",x="Time",y="Comparison to Feb 2020 1st Week Average")+
+  labs(title ="% of Motor Vehicles on UK Roads",x="Time",
+    y="Comparison to Feb 2020 1st Week Average")+
   geom_line(aes(y=all_vehicles,color="% of Cars"))+
   geom_line(aes(y=cars_3day,color="3 Day Moving Average"))+
   geom_line(aes(y=cars_7day,color="7 Day Moving Average"))+
