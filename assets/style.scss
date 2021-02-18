@@ -1161,7 +1161,7 @@ Modules - reusable parts of our design
   align-items:  center;
   width: 400px;
   height: 400px;
-  border-radius: 2px;
+  border-radius: 10px;
   box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
   overflow: hidden;
   background: #FFEEEF;
@@ -1172,15 +1172,16 @@ Modules - reusable parts of our design
 .square {
   width: 10rem;
   height: 10rem;
-  border: 1px solid black;
+  border: 1px solid;
   position: absolute;
   animation-duration: 10s;
+  animation-timing-function: ease;
   animation-iteration-count: infinite;
 }
 // making a circle in the animation
 .circle {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.45rem;
+  width: 2.45rem;
   background-color: #cc0066;
   border-radius: 50%;
   display: inline-block;
@@ -1211,6 +1212,7 @@ Modules - reusable parts of our design
     transform: rotate(900deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 200px solid;
   }
 }
 #s1{
@@ -1221,6 +1223,8 @@ Modules - reusable parts of our design
     transform: rotate(800deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
+    color: #ff0000;
   }
 }
 #s2{
@@ -1231,6 +1235,8 @@ Modules - reusable parts of our design
     transform: rotate(700deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
+    color:#ff8000 ;
   }
 }
 #s3{
@@ -1241,6 +1247,8 @@ Modules - reusable parts of our design
     transform: rotate(600deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
+    color:#ffff00  ;
   }
 }
 #s4{
@@ -1251,6 +1259,8 @@ Modules - reusable parts of our design
     transform: rotate(500deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
+    color:#80ff00;
   }
 }
 #s5{
@@ -1261,6 +1271,8 @@ Modules - reusable parts of our design
     transform: rotate(400deg);
     height: 2.5rem;
     border-radius: 55%;
+    border: 2px solid;
+    color: #00ff00;
   }
 }
 #s6{
@@ -1271,6 +1283,8 @@ Modules - reusable parts of our design
     transform: rotate(300deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
+    color: #00ff80 ;
   }
 }
 #s7{
@@ -1281,6 +1295,8 @@ Modules - reusable parts of our design
     transform: rotate(200deg);
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid;
+    color: #00ffff;
   }
 }
 #s8{
@@ -1290,7 +1306,20 @@ Modules - reusable parts of our design
   50%{
     transform: rotate(100deg);
     height: 2.5rem;
+    border: 2px solid;
     border-radius: 50%;
-    color: #ff4d00
+    color: #0080ff ;
+  }
+}
+#s9{
+  animation-name: a9
+}
+@keyframes a9{
+  50%{
+    transform: rotate(100deg);
+    height: 2.5rem;
+    border: 2px solid;
+    border-radius: 50%;
+    color: #0000ff ;
   }
 }

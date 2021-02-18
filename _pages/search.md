@@ -30,6 +30,7 @@ permalink: /search/
       <div class="square" id="s6"></div>
       <div class="square" id="s7"></div>
       <div class="square" id="s8"></div>
+      <div class="square" id="s9"></div>
       <div class="circle" id="circle0" ></div>
   </div>
 </div>
