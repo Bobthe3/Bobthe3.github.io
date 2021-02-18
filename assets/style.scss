@@ -310,7 +310,7 @@ p > img {
   margin: 0;
   color: #ffffff;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $helvetica;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -1177,6 +1177,30 @@ Modules - reusable parts of our design
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+// making a circle in the animation
+.circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #cc0066;
+  border-radius: 50%;
+  display: inline-block;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+// making the animation of the circle
+#circle0{
+  animation-name: b0
+}
+@keyframes b0 {
+  0%{ border-radius: 10%;opacity: 0;}
+  40%{opacity: 0}
+  50%{border-radius: 50%; opacity:1;}
+  60%{opacity: 0}
+  100%{ border-radius: 10%;opacity: 0;}
+}
+
+
 
 // animation propiety from s1 to s8
 #s0{
@@ -1267,6 +1291,6 @@ Modules - reusable parts of our design
     transform: rotate(100deg);
     height: 2.5rem;
     border-radius: 50%;
-    color: #453454
+    color: #ff4d00
   }
 }

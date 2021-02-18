@@ -91,23 +91,12 @@ all_plots
 
 
 
-
-
-![GGplot](\images\uk\static_uk_transport_all_types_rplot.png)
-
-
-
-
-
-
+<img src="\images\uk\static_uk_transport_all_types_rplot.png" style="width=100%"/>
 
 
 ---
 
 - Creating the interactive plotly graph
-
-
-
 
 
 ``` r
@@ -117,17 +106,11 @@ saveWidget(inter_all_plots,"all_transportation_plots.html")
 
 
 ```
-<iframe src="\images\uk\all_transportation_plots.html" height="800px" width="900" ></iframe>
+<iframe src="\images\uk\all_transportation_plots.html" height="800px" width="105%" ></iframe>
 
 ---
 
-
-
-
 - Creating a basic animation of the % of cars
-
-
-
 
 ``` r
 # Adding moving averages
@@ -157,7 +140,7 @@ main_animation<-main_plot+
   view_follow(fixed_x = T,fixed_y=T)
 
 
-# Chnaging up the speed of the animation
+# Changing up the speed of the animation
 
 animate(main_animation,
   height=750,
